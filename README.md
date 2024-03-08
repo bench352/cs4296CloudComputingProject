@@ -38,20 +38,14 @@ The API documentation of the web server can be found [here](./web-server/README.
     bash ./setup.sh
     ```
 
-5. On the `web-server` directory, make a `media` directory
-
-    ```bash
-    mkdir web-server/media
-    ```
-
-6. Start the web server (on the `web-server` directory)
+5. Start the web server (on the `web-server` directory)
 
     ```bash
     source venv/bin/activate
     python3 main.py
     ```
 
-7. Access your web server at `http://localhost:8000` or `http://<your-server-ip>:8000`.
+6. Access your web server at `http://localhost:8000` or `http://<your-server-ip>:8000`.
 
 #### Using Docker
 
