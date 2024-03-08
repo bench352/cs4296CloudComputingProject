@@ -50,7 +50,7 @@ The API documentation of the web server can be found [here](./web-server/README.
 #### Using Docker
 
 The Docker image is available
-at [Docker Hub](https://hub.docker.com/repository/docker/bench352/cs4296-web-server-for-project). You can run the image
+at [Docker Hub](https://hub.docker.com/r/bench352/cs4296-web-server-for-project). You can run the image
 on your machine using the following command:
 
 ```bash
