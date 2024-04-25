@@ -17,7 +17,7 @@ The API documentation of the web server can be found [here](./web-server/README.
 
    ```bash
    sudo apt-get update
-   sudo apt-get install git python3 python3-pip -y
+   sudo apt-get install git python3 python3-pip python3.10-venv -y
    ```
 
 2. Git Clone the repository
