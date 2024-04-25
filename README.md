@@ -26,26 +26,32 @@ The API documentation of the web server can be found [here](./web-server/README.
    git clone https://github.com/bench352/cs4296CloudComputingProject.git
    ```
 
-3. Change directory to the git repository and within the `web-server` directory
+3. Change directory to the git repository
 
    ```bash
-   cd cs4296CloudComputingProject/web-server
+   cd cs4296CloudComputingProject
    ```
 
-4. Run the installation script
+4. Run the installation script. This script will install the webserver in `/usr/local/bin/web-server` and start it as
+   a systemd service.
 
     ```bash
-    bash ./setup.sh
+    sudo bash ./setup.sh
     ```
 
-5. Start the web server (on the `web-server` directory)
+5. Access your web server at `http://localhost:8000` or `http://<your-server-ip>:8000`. You can also check the status of
+   the web server using the following command:
 
     ```bash
-    source venv/bin/activate
-    python3 main.py
+    sudo systemctl status webserver
     ```
 
-6. Access your web server at `http://localhost:8000` or `http://<your-server-ip>:8000`.
+> **Uninstallation**: An uninstallation script is also provided in the repository. It will remove both the systemd
+> service for the webserver and the webserver itself. You can uninstall the web server using the following command:
+>
+>  ```bash
+>  sudo bash ./uninstall.sh
+>  ```
 
 #### Using Docker
 

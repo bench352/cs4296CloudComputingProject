@@ -1,0 +1,12 @@
+[Unit]
+Description=Web Server for CS4296 Cloud Computing Project
+After=network.target
+
+[Service]
+User=<your_username>
+Group=www-data
+WorkingDirectory=/usr/local/bin/web-server
+ExecStart=/usr/local/bin/web-server/venv/bin/python3 -m gunicorn --bind=0.0.0.0:8000 -k uvicorn.workers.UvicornWorker main:app
+
+[Install]
+WantedBy=multi-user.target
