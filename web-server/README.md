@@ -4,7 +4,7 @@ This web server has been developed to benchmark the performance of the chosen de
 
 ## API Endpoints
 
-### `/api/test/response`
+### `GET /api/test/response`
 
 An API endpoint that returns a fixed dummy response. Designed to test the network latency of the deployment platform.
 
@@ -21,7 +21,7 @@ No parameters
 }
 ```
 
-### `/api/test/calculation`
+### `POST /api/test/calculation`
 
 A computationally heavy and memory-intensive API endpoint that invokes a matrix multiplication on the server side with a
 configurable matrix size. Returns the time taken to generate matrixes with random values and perform matrix
@@ -47,7 +47,7 @@ multiplication. Designed to test the computational performance of the deployment
 }
 ```
 
-### `/api/test/file`
+### `GET /api/test/file`
 
 An API endpoint for downloading a dummy text file with the chosen size. Designed to test the network performance of the
 deployment platform.
@@ -62,7 +62,7 @@ deployment platform.
 
 A text file with the specified size.
 
-### `/docs`
+### `GET /docs`
 
 An API endpoint to access the **Swagger UI** for the webserver to test the API endpoints.
 
